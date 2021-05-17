@@ -9,7 +9,7 @@ public class Mascota {
 	private String chip;
 	private String raza;
 	private String talla;//será "S", "M", "L", "XL"
-	private Collection<Prestacion> prestaciones = new ArrayList<Prestacion>();
+//	private Collection<Prestacion> prestaciones = new ArrayList<Prestacion>();
 	//transient protected ServicioEntidad servicioEntidad;
 
 	
@@ -17,12 +17,6 @@ public class Mascota {
 		super();
 	}
 	
-	public Mascota(String nombre, String chip, String talla) {
-		super();
-		this.nombre = nombre;
-		this.chip = chip;
-		this.talla = talla;
-	}
 
 	public String getNombre() {
 		return nombre;
@@ -40,9 +34,13 @@ public class Mascota {
 		return talla;
 	}
 	
-	public Collection<Prestacion> getPrestaciones() {
-		return prestaciones;
-	}
+//	public Collection<Prestacion> getPrestaciones() {
+//		return prestaciones;
+//	}
+//	
+//	public void setPrestaciones(Collection<Prestacion> prestaciones) {
+//		this.prestaciones = prestaciones;
+//	}
 
 	@Override
 	public String toString() {
