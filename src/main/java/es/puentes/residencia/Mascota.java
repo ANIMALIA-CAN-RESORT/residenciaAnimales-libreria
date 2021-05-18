@@ -9,8 +9,7 @@ public class Mascota {
 	private String chip;
 	private String raza;
 	private String talla;//será "S", "M", "L", "XL"
-//	private Collection<Prestacion> prestaciones = new ArrayList<Prestacion>();
-	//transient protected ServicioEntidad servicioEntidad;
+	private Collection<Prestacion> prestaciones = new ArrayList<Prestacion>();
 
 	
 	public Mascota() {
@@ -34,13 +33,13 @@ public class Mascota {
 		return talla;
 	}
 	
-//	public Collection<Prestacion> getPrestaciones() {
-//		return prestaciones;
-//	}
-//	
-//	public void setPrestaciones(Collection<Prestacion> prestaciones) {
-//		this.prestaciones = prestaciones;
-//	}
+	public Collection<Prestacion> getPrestaciones() {
+		return prestaciones;
+	}
+	
+	public void setPrestaciones(Collection<Prestacion> prestaciones) {
+		this.prestaciones = prestaciones;
+	}
 
 	@Override
 	public String toString() {

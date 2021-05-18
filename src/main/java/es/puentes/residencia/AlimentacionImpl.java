@@ -14,6 +14,10 @@ public class AlimentacionImpl extends PrestacionImpl implements Alimentacion {
 		return tipoComida;
 	}
 	
+	public void setTipoComida(String tipoComida) {
+		this.tipoComida = tipoComida;
+	}
+	
 	@Override
 	public float getCantidadComidaDiaria() {
 		return cantidadComidaDiaria;
@@ -28,12 +32,6 @@ public class AlimentacionImpl extends PrestacionImpl implements Alimentacion {
 	}
 	
 	public AlimentacionImpl() {}
-	
-	public AlimentacionImpl(Instant fechaEntrada, Instant fechaSalida, String tipoComida, float cantidadComidaDiaria) {
-		super(fechaEntrada, fechaSalida);
-		this.tipoComida = tipoComida;
-		this.cantidadComidaDiaria = cantidadComidaDiaria;
-	}
 	
 	@Override
 	public float getPrecioDia() {

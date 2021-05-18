@@ -9,11 +9,6 @@ public class AlojamientoImpl extends PrestacionImpl implements Alojamiento {
 	
 	public AlojamientoImpl() {}
 	
-	public AlojamientoImpl(Instant fechaEntrada, Instant fechaSalida, int idJaula) {
-		super(fechaEntrada, fechaSalida);
-		this.idJaula = idJaula;
-	}
-	
 	@Override
 	public int getIdJaula() {
 		return idJaula;
