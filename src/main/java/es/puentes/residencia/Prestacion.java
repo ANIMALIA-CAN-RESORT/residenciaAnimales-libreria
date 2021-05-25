@@ -8,4 +8,5 @@ public interface Prestacion {
 	Instant getFechaSalida();
 	float getPrecioDia();
 	float getPrecioPrestacion();
+	boolean isPagada();
 }

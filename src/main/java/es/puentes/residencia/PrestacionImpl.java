@@ -6,7 +6,7 @@ import java.time.temporal.ChronoUnit;
 public abstract class PrestacionImpl implements Prestacion {
 
 	private Instant fechaEntrada, fechaSalida;
-
+	private boolean pagada;
 	
 	public PrestacionImpl() {}
 	
@@ -18,6 +18,14 @@ public abstract class PrestacionImpl implements Prestacion {
 	@Override
 	public Instant getFechaSalida() {
 		return fechaSalida;
+	}
+		
+	public boolean isPagada() {
+		return pagada;
+	}
+	
+	public void setPagada(boolean pagada) {
+		this.pagada = pagada;
 	}
 
 	@Override
